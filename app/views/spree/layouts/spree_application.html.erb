@@ -6,10 +6,6 @@
 <!--[if gt IE 9]><!--><html lang="<%= I18n.locale %>"><!--<![endif]-->
   <head data-hook="inside_head">
     <%= render partial: 'spree/shared/head' %>
-    <link href='http://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
   </head>
   <body class="<%= body_class %>" id="<%= @body_id || 'default' %>" data-hook="body">
     <%= render partial: 'spree/shared/google_analytics.js' %>
@@ -21,7 +17,7 @@
 
         <%= render partial: 'spree/shared/sidebar' if content_for? :sidebar %>
 
-        <div id="content" class="<%= !content_for?(:sidebar) ? "col-sm-12" : "col-sm-9 col-md-10" %>" data-hook>
+        <div id="content" class="<%= !content_for?(:sidebar) ? "col-sm-12" : "col-sm-8 col-md-9" %>" data-hook>
           <%= flash_messages %>
           <%= yield %>
         </div>
