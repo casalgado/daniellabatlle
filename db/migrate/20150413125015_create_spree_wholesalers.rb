@@ -15,7 +15,6 @@ class CreateSpreeWholesalers < ActiveRecord::Migration
       t.text   :notes
       t.timestamps
     end
-    add_index :spree_wholesalers, [:billing_address_id, :shipping_address_id], :name => "wholesalers_addresses"
     add_column :spree_orders,   :wholesale,       :boolean, :default   => false
     add_column :spree_variants, :wholesale_price, :decimal, :precision => 8, :scale => 2, :null => false, :default => 0
   end
