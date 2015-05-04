@@ -10,6 +10,7 @@ Rails.application.routes.draw do
     end
     root 'pages#home'
 
+
     get '/cart_link', to:'spree/store#cart_link'
     mount Spree::Core::Engine, :at => '/store'
     Spree::Core::Engine.routes.draw do
