@@ -11,7 +11,8 @@ Rails.application.routes.draw do
     root 'pages#home'
 
 
-    get '/cart_link', to:'spree/store#cart_link'
+    get '/cart_link',  to: 'spree/store#cart_link'
+    get '/api/taxons', to: 'spree/api/taxons#index'
     mount Spree::Core::Engine, :at => '/store'
     Spree::Core::Engine.routes.draw do
 
