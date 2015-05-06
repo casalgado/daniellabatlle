@@ -12,3 +12,15 @@
 //= require store/product_variant_options
 //= require store/variant_options
 //= require spree/frontend/spree_i18n
+
+
+var ready = function() {
+
+	/* Hide nav-bar with locale link */
+
+	// $('#main-nav-bar').hide()
+
+};
+
+$(document).ready(ready);
+$(document).on('page:load', ready);
