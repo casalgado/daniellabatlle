@@ -12,7 +12,17 @@ Rails.application.routes.draw do
 
 
     get '/cart_link',  to: 'spree/store#cart_link'
-    get '/api/taxons', to: 'spree/api/taxons#index'
+    # get '/api/taxons', to: 'spree/api/taxons#index'
+
+    get 'api/*other', :to => redirect { |params, request|
+      path = "store" + request.env["ORIGINAL_FULLPATH"]
+      "http://#{request.host_with_port}/#{path}"
+    }
+
+    get 'admin/*other', :to => redirect { |params, request|
+      path = "/store" + request.env["ORIGINAL_FULLPATH"]
+      "http://#{request.host_with_port}/#{path}"
+    }
     mount Spree::Core::Engine, :at => '/store'
     Spree::Core::Engine.routes.draw do
 
