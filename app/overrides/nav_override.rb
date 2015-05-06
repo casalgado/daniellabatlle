@@ -37,9 +37,9 @@ Deface::Override.new(:virtual_path     => "spree/shared/_header",
                      :text             => "<div id='thin-black-line'></div>",
                      :name             => "black-line")
 
-# Deface::Override.new(:virtual_path  => "spree/shared/_header",
-#                      :remove        => "erb[loud]:contains('spree/shared/main_nav_bar')",
-#                      :name          => "remove-home-link")
+Deface::Override.new(:virtual_path  => "spree/shared/_header",
+                     :remove        => "erb[loud]:contains('spree/shared/main_nav_bar')",
+                     :name          => "remove-home-link")
 
 
 Deface::Override.new(:virtual_path     => "spree/shared/_head",
