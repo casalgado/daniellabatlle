@@ -12,7 +12,6 @@ Rails.application.routes.draw do
 
 
     get '/cart_link',  to: 'spree/store#cart_link'
-    # get '/api/taxons', to: 'spree/api/taxons#index'
 
     get 'api/*other', :to => redirect { |params, request|
       path = "store" + request.env["ORIGINAL_FULLPATH"]
