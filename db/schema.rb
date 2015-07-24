@@ -300,7 +300,6 @@ ActiveRecord::Schema.define(version: 20150427214252) do
     t.integer  "canceler_id"
     t.integer  "store_id"
     t.integer  "state_lock_version",                                         default: 0,       null: false
-    t.boolean  "wholesale",                                                  default: false
   end
 
   add_index "spree_orders", ["approver_id"], name: "index_spree_orders_on_approver_id"
@@ -1064,7 +1063,6 @@ ActiveRecord::Schema.define(version: 20150427214252) do
     t.integer  "tax_category_id"
     t.datetime "updated_at"
     t.integer  "stock_items_count",                          default: 0,     null: false
-    t.decimal  "wholesale_price",   precision: 8,  scale: 2, default: 0.0,   null: false
   end
 
   add_index "spree_variants", ["deleted_at"], name: "index_spree_variants_on_deleted_at"
@@ -1074,23 +1072,6 @@ ActiveRecord::Schema.define(version: 20150427214252) do
   add_index "spree_variants", ["sku"], name: "index_spree_variants_on_sku"
   add_index "spree_variants", ["tax_category_id"], name: "index_spree_variants_on_tax_category_id"
   add_index "spree_variants", ["track_inventory"], name: "index_spree_variants_on_track_inventory"
-
-  create_table "spree_wholesalers", force: :cascade do |t|
-    t.integer  "user_id"
-    t.string   "company"
-    t.string   "buyer_contact"
-    t.string   "manager_contact"
-    t.string   "phone"
-    t.string   "fax"
-    t.string   "resale_number"
-    t.string   "taxid"
-    t.string   "web_address"
-    t.string   "terms"
-    t.string   "alternate_email"
-    t.text     "notes"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
 
   create_table "spree_zone_members", force: :cascade do |t|
     t.integer  "zoneable_id"
