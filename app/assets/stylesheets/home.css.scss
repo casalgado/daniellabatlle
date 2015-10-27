@@ -16,8 +16,13 @@
 }
 
 #slider {
-	width: 100% !important;
-	height: 700px !important;
+	width: 100%;
+	height: 700px;
 	position: fixed;
 	top: 50px;
+}
+
+.slider-img {
+	margin-left: auto;
+	margin-right: auto;
 }
