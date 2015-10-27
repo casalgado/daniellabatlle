@@ -21,8 +21,6 @@ var resize = function() {
       $navHeight = $('#nav').height()
       $displayHeight = $windowHeight - ($navHeight + 26)
       $("#page-content").offset({ top: $displayHeight + 20 })
-      $("#slider").width($windowWidth * 0.8)
-  	  $("#slider").offset({ left: $windowWidth * 0.1, top: $displayHeight - ($windowWidth * 0.45) })
   	  $("#page-content").height($windowHeight)
   	  $("#logo-bar").offset({ top: $displayHeight })
       $('#logo-bar').height(20)
