@@ -1,12 +1,17 @@
 
 
 .content-block {
-	margin-top: 40px;
-	width: 350px;
-	height: 350px;
+	margin-top: 60px;
+	width: 450px;
+	height: 450px;
 	float: right;
 	border: 3px solid black;
 	margin-right: 15px;
+	overflow: hidden;
+
+	img {
+		width: 100%;
+	}
 
 }
 
@@ -29,4 +34,28 @@
 
 .carousel-inner > .item > img {
     margin: 0 auto;
+}
+
+.social-media-block {
+
+	p {
+		text-align: center;
+		font-family: Lato;
+	}
+
+	margin-top: 60px;
+
+	li {
+		list-style-type: none;
+		display: inline;
+		padding-right: 10px;
+		padding-left: 10px;
+	}
+
+	ul {
+		padding: 0 0 0 0;
+		margin: 0 auto;
+		width: 260px;
+	}
+
 }

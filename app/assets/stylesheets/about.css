@@ -20,3 +20,41 @@ p.quote {
 	padding-left:  50px; 
 	padding-right: 50px; 
 }
+
+.about-block {
+	margin-top: 40px;
+	width: 450px;
+	height: 679px;
+	float: right;
+	margin-right: 5px;
+	overflow: hidden;
+
+}
+
+.about-block p {
+	color: black;
+	
+	text-align: right;
+	width: 370px;
+	margin-left: 80px;
+}
+
+.about-block-2 p {
+	font-style: italic;
+	font-family: Slabo;
+	color: gray;
+	font-size: 130%;
+	margin: auto auto auto auto;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.about-block img {
+		width: 100%;
+	}
+
+.about-block-2 {
+	display: table;
+	float: left;
+	margin-left: 5px;
+}
