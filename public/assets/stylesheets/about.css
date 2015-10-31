@@ -1,0 +1,59 @@
+
+.about-text {
+	width: 60%;
+	margin: auto;
+}
+
+.about-text h1 {
+		text-align: center;
+		font-family: serif;
+		font-size: 60px;
+		margin: 50px auto 50px auto;
+}
+
+.about-text p {
+		text-align: justify;
+}
+
+p.quote {
+	font-style: italic;
+	padding-left:  50px; 
+	padding-right: 50px; 
+}
+
+.about-block {
+	margin-top: 40px;
+	width: 450px;
+	height: 679px;
+	float: right;
+	margin-right: 5px;
+	overflow: hidden;
+
+}
+
+.about-block p {
+	color: black;
+	text-align: right;
+	width: 370px;
+	margin-left: 80px;
+}
+
+.about-block-2 p {
+	font-style: italic;
+	font-family: Slabo;
+	color: gray;
+	font-size: 130%;
+	margin: auto auto auto auto;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.about-block img {
+		width: 100%;
+	}
+
+.about-block-2 {
+	display: table;
+	float: left;
+	margin-left: 5px;
+}

@@ -1,0 +1,38 @@
+
+.store-image {
+	width: 405px;
+	height: 259px;
+	margin: 40px auto auto auto;
+	border: 3px solid black;
+	overflow: hidden;
+}
+
+
+
+.store-info {
+	width: 405px;
+	margin: 0 auto auto auto;
+	text-align: left;
+
+	h3, p { font-family: 'lato' }
+
+	h4 { 
+		margin-top: 25px;
+		font-family: 'Montserrat';
+		font-weight: 400;
+	}
+
+
+}
+
+#ctg-image {
+	background-image: url("stdom-01.png");
+}
+
+.img1:hover {
+	padding-top: 500px;
+}
+
+.store-info-list {
+	list-style-type: none;
+}
