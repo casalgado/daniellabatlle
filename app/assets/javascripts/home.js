@@ -7,6 +7,7 @@ var ready = function() {
       $('#logo-bar').height(20)
       $("#brand-logo").hide()
       $("#logo-black-cover").show()
+      $("#footer-all").hide()
     } else {
       $("#nav").addClass('navbar-fixed-top')
       $("#logo-bar").offset({ top: 48 })
