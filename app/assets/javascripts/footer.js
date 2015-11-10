@@ -1,12 +1,15 @@
 
 var ready = function() {
 
-    
     $(".news-item").hover(function () {
         $(this).toggleClass("news-hover");
     });
 
 };
+
+
+
+
 
 
 
